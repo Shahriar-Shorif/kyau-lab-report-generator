@@ -28,10 +28,10 @@
             max-width: 400px;
             height: fit-content;
         }
-        /* A4 Size Paper CSS */
+        /* A4 Size Paper CSS - Fixed for 1 Page */
         .preview-section {
             width: 210mm;
-            height: 297mm;
+            height: 296mm; /* 297mm এর বদলে 296mm */
             background: #fff;
             padding: 30mm 20mm;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -41,6 +41,7 @@
             font-family: 'Times New Roman', Times, serif;
             font-size: 18px;
             box-sizing: border-box;
+            overflow: hidden; /* অতিরিক্ত অংশ হাইড করবে */
         }
         .logo-container img {
             width: 160px;
@@ -180,7 +181,7 @@
             margin:       0,
             filename:     'KYAU_Lab_Report_Cover.pdf',
             image:        { type: 'jpeg', quality: 1 },
-            html2canvas:  { scale: 2, useCORS: true },
+            html2canvas:  { scale: 2, useCORS: true, scrollY: 0 }, /* scrollY: 0 যোগ করা হয়েছে */
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
         };
         html2pdf().set(opt).from(element).save();
