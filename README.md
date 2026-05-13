@@ -43,7 +43,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 **Shoriful Islam**
 * Student, Dept. of CSE, Khwaja Yunus Ali University
-* GitHub: [@your-username](https://github.com/Shahriar-Shorif/)
+* GitHub: [@SHORIFUL ISLAM](https://github.com/Shahriar-Shorif/)
 
 ---
 *Made with ❤️ for the students of KYAU.*
